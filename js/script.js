@@ -5,10 +5,10 @@ const result = document.querySelector(".result");
 const form = document.querySelector(".form");
 // btn.addEventListener("click", btnClick);
 
-// form.addEventListener('submit', btnClick);
+form.addEventListener('submit', btnClick);
 
-// function btnClick (event) {
-//     event.preventDefault();
-//     console.log("Escuchando el evento click!");
-//     result.innerText = Number(input1.value) + Number(input2.value);
-// }
+function btnClick (event) {
+    event.preventDefault();
+    console.log("Escuchando el evento click!");
+    result.innerText = Number(input1.value) + Number(input2.value);
+}
